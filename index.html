@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The TeTr</title>
+
+    <link rel="stylesheet" href="css/tetris.css">
+    <link rel="stylesheet" href="css/tetrisHeading.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+
+    <div class="nav">
+        <div class="title">
+            <div class="grid-heading-container">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="left">
+            <div class="controls">
+                <button id="play-button">Play/Pause</button>
+                <button class="restart-btn">Restart</button>
+            </div>
+            <div class="direction-card">
+                <div class="heading">Directions</div>
+                <ul>
+                    <li><i class='bx bx-left-arrow-alt'></i> Move Left </li>
+                    <li><i class='bx bx-right-arrow-alt' ></i>Move Right</li>
+                    <li><i class='bx bx-down-arrow-alt' ></i>Move Down</li>
+                    <li><i class='bx bx-up-arrow-alt' ></i>Rotate</li>
+                </ul>
+            </div>
+        
+        
+        </div>
+
+        <div id="grid" class="grid">
+        </div>
+
+        <div class="right" id="right">
+            
+        <div id="next-tetro-grid" class="next-tetro-grid">
+        </div>
+
+        <div class="score-card">
+           <div class="heading">
+            Score
+           </div> <span id="score">0</span>
+        </div>
+        </div>
+
+        <div id="game-over" class="game-over">
+            <h1>Game Over</h1>
+            <button class="restart-btn">Restart</button>
+          </div>
+
+    </div>
+    <footer>
+    <div class="footer">
+        <div class="footer-content">
+            <h3>The Tetris</h3>
+            <p>Developed by <a href="https://github.com/Faizan-Ahmad07">Faizan Ahmad</a></p>
+        </div>
+    </div>
+    <div class="socials">
+        <ul>
+            <li>
+                <a href="https://www.instagram.com/faizanahmad4487/" target="_blank">
+                    <i class='bx bxl-instagram-alt'></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/Faizan-Ahmad07" target="_blank">
+                    <i class='bx bxl-github'></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+    <script type="module" src="js/tetrisHeading/tetrisHeading.js"></script>
+    <script  type="module" src="js/tetris.js"></script>
+
+    
+</body>
+</html>
